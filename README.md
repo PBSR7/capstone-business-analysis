@@ -1,119 +1,190 @@
-# CAPSTONE BUSINESS ANALYSIS
+# Customer Churn Analysis – Capstone Project
 
-## Overview
+## Project Overview
 
-This project presents a complete end-to-end data analysis workflow to understand and reduce customer churn. The analysis identifies key factors influencing churn and provides actionable business recommendations using data-driven techniques.
+This project focuses on analyzing customer churn using data-driven techniques. The goal is to identify key factors influencing customer churn and provide actionable business recommendations to improve customer retention.
 
 ---
 
 ## Objectives
 
-- Analyze customer behavior patterns  
-- Identify key drivers of churn  
-- Perform exploratory data analysis (EDA)  
-- Build a predictive model  
-- Provide actionable business recommendations  
+* Analyze customer behavior and churn patterns
+* Perform end-to-end data analysis
+* Build a predictive model to identify churn risk
+* Provide actionable business insights and recommendations
 
 ---
 
 ## Project Structure
 
+```
 capstone-business-analysis/
 │
 ├── data/
-│ ├── customer_churn.csv
-│ ├── cleaned_data.csv
+│   ├── customer_churn.csv
+│   ├── cleaned_data.csv
 │
 ├── notebooks/
-│ ├── 1_data_cleaning.ipynb
-│ ├── 2_eda.ipynb
-│ ├── 3_analysis.ipynb
+│   ├── 1_data_cleaning.ipynb
+│   ├── 2_eda.ipynb
+│   ├── 3_analysis.ipynb
 │
 ├── reports/
-│ ├── executive_summary.pdf
-│ ├── technical_report.pdf
+│   ├── executive_summary.pdf
+│   ├── technical_report.pdf
 │
 ├── presentation/
-│ ├── business_presentation.pptx
+│   ├── modern_canva_style_presentation.pptx
 │
+├── capstone_analysis.ipynb
 ├── README.md
 ├── requirements.txt
+```
 
 ---
 
-## Installation & Setup
+## Setup Instructions
 
-### 1. Clone the repository
+### 1️.Clone the Repository
 
 ```bash
-git clone https://github.com/pbsr7/capstone-business-analysis.git
+git clone https://github.com/your-username/capstone-business-analysis.git
 cd capstone-business-analysis
-2. Install dependencies
+```
+
+### 2️.Install Dependencies
+
+```bash
 pip install -r requirements.txt
-3. Run notebooks
+```
 
-Open Jupyter Notebook or VS Code and run:
+### 3️.Run Jupyter Notebook
 
-1_data_cleaning.ipynb
-2_eda.ipynb
-3_analysis.ipynb
-Dataset Information
-Dataset: Customer Churn Dataset
-Records: 500+
-Features: Customer demographics and usage
-Target Variable: Churn
-Data Preprocessing
-Removed missing values
-Removed duplicate records
-Standardized column names
-Converted categorical variables
-Saved cleaned dataset
-Exploratory Data Analysis (EDA)
-Churn distribution analysis
-Correlation heatmap
-Feature vs churn analysis (boxplots)
-Distribution plots
-Model Building
-Model: Logistic Regression
-Data Split: 80% training / 20% testing
-Preprocessing: One-hot encoding
-Evaluation Metrics:
-Accuracy
-Precision
-Recall
-F1 Score
-Key Insights
-Certain customer behaviors strongly influence churn
-High-risk customer segments identified
-Early-stage customers show higher churn tendency
-Business Recommendations
-Target high-risk customers with offers
-Improve onboarding experience
-Introduce retention programs
-Monitor churn indicators continuously
-Results
-Model successfully predicts churn behavior
-Provides actionable insights for business decisions
-Limitations
-Limited dataset size
-Basic model used (Logistic Regression)
-Limited feature engineering
-Future Improvements
-Use advanced models (Random Forest, XGBoost)
-Handle class imbalance (SMOTE)
-Deploy model using Flask or Streamlit
-Build dashboard (Power BI / Tableau)
-Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Conclusion
+```bash
+jupyter notebook
+```
 
-This project demonstrates how data analysis and machine learning can be used to understand customer churn and improve retention strategies. It highlights the importance of data-driven decision-making in business.
+---
 
-Acknowledgements
-Dataset for educational purposes
-Inspired by real-world business problems
+## Dataset Information
+
+* Dataset: Customer Churn Data
+* Rows: 500+
+* Features: Customer attributes and usage data
+* Target Variable: **Churn**
+
+---
+
+## Workflow
+
+### 1. Data Cleaning
+
+* Removed missing values
+* Removed duplicates
+* Standardized column names
+
+### 2. Exploratory Data Analysis (EDA)
+
+* Churn distribution analysis
+* Correlation heatmap
+* Feature vs churn visualization
+* Distribution analysis
+
+### 3. Model Building
+
+* Algorithm: Logistic Regression
+* Data split: 80% training / 20% testing
+* Evaluation metrics: Accuracy, Precision, Recall
+
+---
+
+## Key Visualizations
+
+* Churn distribution plot
+* Correlation heatmap
+* Boxplots (feature vs churn)
+* Histograms for feature distribution
+
+---
+
+## Results
+
+* Model successfully predicts churn behavior
+* Identified key factors influencing churn
+* Achieved reliable classification performance
+
+---
+
+## Key Insights
+
+* High-risk customers are identifiable
+* Customer behavior significantly impacts churn
+* Early-stage customers are more likely to churn
+
+---
+
+## Business Recommendations
+
+* Offer targeted discounts to high-risk customers
+* Improve onboarding experience
+* Implement customer retention programs
+* Monitor churn indicators continuously
+
+---
+
+## Deliverables
+
+* Jupyter Notebooks (Data Cleaning, EDA, Model)
+* Presentation (Canva-style PPT)
+* Executive Summary
+* Technical Report
+* Well-documented code repository
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas, NumPy
+* Matplotlib, Seaborn
+* Scikit-learn
+* Jupyter Notebook
+
+---
+
+## Testing & Validation
+
+* Verified cleaned dataset
+* Evaluated model using test data
+* Checked consistency of results
+
+---
+
+## Limitations
+
+* Moderate dataset size
+* Limited feature diversity
+* Basic model used (Logistic Regression)
+
+---
+
+## Future Improvements
+
+* Implement advanced ML models (Random Forest, XGBoost)
+* Perform feature engineering
+* Handle class imbalance
+* Deploy model as a web application
+
+---
+
+## Conclusion
+
+This project demonstrates an end-to-end data analysis workflow, from raw data to actionable insights. The findings highlight how data-driven strategies can effectively reduce customer churn and improve business performance.
+
+---
+
+## Acknowledgements
+
+This project was completed as part of a capstone data analysis program.
+
+---
